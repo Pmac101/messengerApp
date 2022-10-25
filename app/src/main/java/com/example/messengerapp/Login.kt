@@ -25,7 +25,7 @@ class Login : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
 
         edtEmail = findViewById(R.id.edt_email)
-        edtEmail = findViewById(R.id.edt_password)
+        edtPassword = findViewById(R.id.edt_password)
         btnLogin = findViewById(R.id.btnLogin)
         btnSignUp = findViewById(R.id.btnSignUp)
 
