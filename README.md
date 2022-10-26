@@ -1,4 +1,4 @@
-This is a instant messenger mobile application created for Android devices. It is a group project for my computer networks class. The purpose of this app is to allow users to communicate via text messages.
+This is a instant messenger mobile application created for Android devices. The purpose of this app is to allow users to communicate via text messages.
 
 
 Upon opening the application, the user can sign in or register as a new user. When registering as a new user, the user's data will be uploaded to a realtime database with Firebase
