@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChatActivity">
+    tools:context=".ChatActivity"
+    android:background="@color/primary_bg">
 
 
     <androidx.recyclerview.widget.RecyclerView
@@ -28,16 +29,18 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:hint="Type your message here"
-            android:layout_marginLeft="10dp"
-            android:paddingLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:paddingStart="10dp"
             android:background="@drawable/message_box_background"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:layout_weight="85"/>
 
         <ImageView
             android:id="@+id/sentButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/send_arrow"
+            android:src="@drawable/arrow2"
             android:layout_weight="20"/>
 
     </LinearLayout>

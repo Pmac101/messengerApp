@@ -4,15 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUp">
+    tools:context=".SignUp"
+    android:background="@color/primary_bg">
+
+    <TextView
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:text="Messenger App"/>
 
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_below="@+id/main_header"
         android:src="@drawable/orange_messenger_icon"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"/>
+        android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/edt_name"
@@ -23,6 +35,8 @@
         android:hint="Name"
         android:paddingLeft="13dp"
         android:background="@drawable/edt_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
@@ -35,6 +49,8 @@
         android:hint="Email"
         android:paddingLeft="13dp"
         android:background="@drawable/edt_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
@@ -47,6 +63,8 @@
         android:hint="Password"
         android:paddingLeft="13dp"
         android:background="@drawable/edt_background"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
 
