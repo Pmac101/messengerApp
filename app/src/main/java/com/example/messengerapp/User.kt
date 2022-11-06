@@ -5,6 +5,7 @@ class User {
     var email: String? = null
     var uid: String? = null
 
+    // empty constructor needed for Firebase
     constructor(){}
 
     constructor(name: String?, email: String?, uid: String?) {

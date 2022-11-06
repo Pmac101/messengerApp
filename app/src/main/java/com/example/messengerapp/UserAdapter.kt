@@ -20,6 +20,7 @@ class UserAdapter(val context: Context, val userList: java.util.ArrayList<User>)
         return UserViewHolder(view)
     }
 
+    // gets current user from user list
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val currentUser = userList[position]
 
@@ -33,7 +34,7 @@ class UserAdapter(val context: Context, val userList: java.util.ArrayList<User>)
             context.startActivity(intent)
         }
     }
-
+    // gets/returns size of user list
     override fun getItemCount(): Int {
         return userList.size
     }

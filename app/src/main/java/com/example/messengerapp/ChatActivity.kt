@@ -21,7 +21,7 @@ class ChatActivity : AppCompatActivity() {
     var receiverRoom: String? = null
     var senderRoom: String? = null
 
-
+    // creates ChatActivity instance
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat)

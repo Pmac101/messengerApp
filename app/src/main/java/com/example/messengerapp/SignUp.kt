@@ -19,6 +19,7 @@ class SignUp : AppCompatActivity() {
     private lateinit var mAuth: FirebaseAuth
     private lateinit var mDbRef: DatabaseReference
 
+    // creates signup instance
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
@@ -41,6 +42,7 @@ class SignUp : AppCompatActivity() {
         }
     }
 
+    // collects user data for signup
     private fun signUp(name: String, email: String, password: String) {
         mAuth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
@@ -51,12 +53,12 @@ class SignUp : AppCompatActivity() {
                     startActivity(intent)
                 }
                 else {
-                    //TODO: check password length and verify it is at least 6 characters
                     Toast.makeText(this@SignUp, "Some error occurred", Toast.LENGTH_SHORT).show()
                 }
             }
     }
 
+    // takes user data and creates a "user" in Firebase
     private fun addUserToDatabase(name: String, email: String, uid: String) {
         mDbRef = FirebaseDatabase.getInstance().reference
 

@@ -16,6 +16,7 @@ class Login : AppCompatActivity() {
     private lateinit var btnSignUp: Button
     private lateinit var mAuth: FirebaseAuth
 
+    // creates login instance
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -42,7 +43,7 @@ class Login : AppCompatActivity() {
         }
 
     }
-
+    // takes user input and logs in if valid
     private fun login(email: String, password: String) {
         mAuth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
