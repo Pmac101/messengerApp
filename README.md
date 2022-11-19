@@ -7,6 +7,9 @@ Upon opening the application, the user can sign in or register as a new user. Wh
 ![messenger1](https://user-images.githubusercontent.com/51823622/200190051-53ee3484-3450-4199-bd1d-3853715034cf.PNG)
 
 
+![messenger5](https://user-images.githubusercontent.com/51823622/202872013-ca923bdd-f79b-4cdd-ba58-93ed3e38e7c0.PNG)
+
+
 After signing in/registering, the home screen will appear. Here the user will see a list of other users they can chat with. To start a conversation, simply press the name of the user you would like to chat with.
 
 
